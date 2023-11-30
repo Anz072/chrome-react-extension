@@ -1,6 +1,7 @@
 import "./summarize.styles.css";
 import SummarizeButton from "./summarize-button.component";
 import { useState } from "react";
+import SummarizeStartButton from "./summarize-start.component";
 
 const TYPES = ["Generic Summary", "Novelty", "Factual", "Entity", "Takeaways"];
 
@@ -23,6 +24,7 @@ const Summarize = () => {
           />
         ))}
       </div>
+      <SummarizeStartButton/>
     </div>
   );
 };
