@@ -1,0 +1,13 @@
+.settings-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px 0px 64px 0px;
+}
+
+.settings-table{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}

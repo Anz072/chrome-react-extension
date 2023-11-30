@@ -1,0 +1,21 @@
+.summarize-choices {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.summarize-main {
+  padding: 0px 0px 64px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.remove-ev {
+  margin: 0;
+  padding: 12px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
