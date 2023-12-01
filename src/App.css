@@ -27,6 +27,7 @@
 .App {
   background-color: #1c3326;
   color: #fff;
+  width: 100%;
 }
 .home-p {
   margin: 0;

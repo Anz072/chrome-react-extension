@@ -24,33 +24,18 @@ const FooterButton = ({ caption }) => {
 
   switch (caption) {
     case iconType.settings:
-      color = page === iconType.settings && "#FF5B36";
-      
-      obj = (
-        <LuSettings2
-          color={color}
-          className="footer-icon"
-        />
-      );
+      color = page === iconType.settings ? "#FF5B36" : "#FFF";
+
+      obj = <LuSettings2 color={color} className="footer-icon" />;
 
       break;
     case iconType.summarize:
-      color = page === iconType.summarize && "#FF5B36";
-      obj = (
-        <RxLightningBolt
-          color={color}
-          className="footer-icon"
-        />
-      );
+      color = page === iconType.summarize ? "#FF5B36" : "#FFF";
+      obj = <RxLightningBolt color={color} className="footer-icon" />;
       break;
     case iconType.home:
-      color = page === iconType.home && "#FF5B36";
-      obj = (
-        <TbHome
-          color={color}
-          className="footer-icon"
-        />
-      );
+      color = page === iconType.home ? "#FF5B36" : "#FFF";
+      obj = <TbHome color={color} className="footer-icon" />;
       break;
     default:
       obj = <TbHome color="white" className="footer-icon" />;
@@ -59,7 +44,9 @@ const FooterButton = ({ caption }) => {
   return (
     <div className="footer-button" onClick={() => clickHandler(caption)}>
       {obj}
-      <p className="footer-text" style={{color:color}}>{caption}</p>
+      <p className="footer-text" style={{ color: color }}>
+        {caption}
+      </p>
     </div>
   );
 };
